@@ -10856,6 +10856,7 @@ p {
 
 .hero {
   position: relative;
+  overflow-x: hidden;
 }
 
 .hero__text {
