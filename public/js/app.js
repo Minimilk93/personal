@@ -12446,7 +12446,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__modules_ScrollCatch__["a" /* default */])();
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {/* harmony export (immutable) */ __webpack_exports__["a"] = Loader;
 function Loader() {
-	var body = document.querySelector('body');
+	var body = document.body;
 
 	$(document).ready(function () {
 		body.classList.add('scroll-control');

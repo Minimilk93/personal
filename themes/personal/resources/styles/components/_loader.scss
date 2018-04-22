@@ -7,18 +7,24 @@
   background: $dark-blue;
   z-index: 9999;
 
-img {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 100px;
-  height: 100px;
-  animation: elastic-spin 3s infinite ease;
+    &__image {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100px;
+        height: 100px;
+
+        img {
+            display: inline-block;
+            width: 100%;
+            animation: elastic-spin 3s infinite ease;
+        }
+    }
 }
-}
+
 .loaded .loader {
     transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
     visibility: hidden;
@@ -28,6 +34,6 @@ img {
 }
 
 @keyframes elastic-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(720deg); }
+    from { transform: rotate(0deg); }
+    to { transform: rotate(720deg); }
 }
