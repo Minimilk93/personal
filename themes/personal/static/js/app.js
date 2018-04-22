@@ -12444,16 +12444,20 @@ Object(__WEBPACK_IMPORTED_MODULE_1__modules_ScrollCatch__["a" /* default */])();
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = Loader;
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (immutable) */ __webpack_exports__["a"] = Loader;
 function Loader() {
-    var body = document.querySelector('body');
-    body.classList.add('scroll-control');
+	var body = document.querySelector('body');
 
-    setTimeout(function () {
-        body.classList.remove('scroll-control');
-        body.classList.add('loaded');
-    }, 2500);
+	$(document).ready(function () {
+		body.classList.add('scroll-control');
+
+		setTimeout(function () {
+			body.classList.remove('scroll-control');
+			body.classList.add('loaded');
+		}, 2500);
+	});
 }
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
 
 /***/ }),
 /* 6 */
