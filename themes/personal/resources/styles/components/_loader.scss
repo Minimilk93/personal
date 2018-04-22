@@ -7,7 +7,7 @@
   background: $dark-blue;
   z-index: 9999;
 
-svg {
+img {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -16,22 +16,7 @@ svg {
   margin: auto;
   width: 100px;
   height: 100px;
-  polygon {
-    stroke-width: 1;
-    stroke-dasharray: 100px;
-    stroke-dashoffset: 100px;
-    animation-name: draw;
-    animation-duration: 5s;
-    animation-fill-mode: forwards; // Stay on the last frame
-    animation-iteration-count: 1; // Run only once
-    animation-timing-function: linear;
-  }
-}
-
-@keyframes draw {
-  to {
-    stroke-dashoffset: 0;
-  }
+  animation: elastic-spin 3s infinite ease;
 }
 }
 .loaded .loader {
@@ -42,4 +27,7 @@ svg {
     overflow: auto;
 }
 
-
+@keyframes elastic-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(720deg); }
+}
