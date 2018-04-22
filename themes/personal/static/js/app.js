@@ -12449,6 +12449,7 @@ function Loader() {
 
 		setTimeout(function () {
 			body.classList.remove('scroll-control');
+			body.classList.add('loaded');
 		}, 2500);
 	});
 }
