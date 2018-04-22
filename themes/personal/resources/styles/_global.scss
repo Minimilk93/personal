@@ -1,0 +1,12 @@
+.toggle-opacity {
+    transition: opacity .3s ease-in;
+
+    &:hover {
+        opacity: .6;
+    }
+}
+
+.content,
+.scroll-control {
+    overflow: hidden;
+}

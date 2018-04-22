@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+@fa-font-path:   "../fonts/";
+
+$font-family-sans-serif: 'Lato';
+
+$twitter-blue: #00aced;
+$dark-blue: #39394e;
+$vibrant-red: #EB4C49;
+$white: #FFF;
+$light-grey: #f1f1f1;
+
+$primary: $vibrant-red;
+$secondary: $dark-blue;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "white":      $white,
+  "light-grey": $light-grey
+);
+
+$body-bg: $light-grey;

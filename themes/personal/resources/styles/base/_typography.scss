@@ -1,0 +1,33 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin heading-size($small, $large) {
+    font-size: $small;
+    line-height: 1;
+
+    @include media-breakpoint-up(lg) {
+        font-size: $large;
+    }
+}
+
+h1, .h1 {
+    @include heading-size(rem-calc(36), rem-calc(65));
+}
+
+h2, .h2 {
+    @include heading-size(rem-calc(30), rem-calc(45));
+}
+
+h3, .h3 {
+    @include heading-size(rem-calc(25), rem-calc(35));
+}
+
+p {
+  font-size: rem-calc(14);
+
+  @include media-breakpoint-up(md) {
+    font-size: rem-calc(16);
+  }
+}

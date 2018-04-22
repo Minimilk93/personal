@@ -1,0 +1,13 @@
+baseURL = "https://shelby.codes"
+languageCode = "en-us"
+title = "Shelby Stanton"
+theme = "personal"
+
+[params]
+		tagline = "Web developer creating beautiful digital experiences."
+		description = "Shelby Stanton is a web developer specialising in front end technologies."
+		author = "Shelby Stanton"
+		twitter = "@shebs_72"
+
+		CanonifyUrls = "true"
+		includeReadingTime = true

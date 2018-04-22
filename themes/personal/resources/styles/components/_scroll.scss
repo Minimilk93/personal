@@ -1,0 +1,38 @@
+.scroll {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 15px;
+  text-align: center;
+  color: $white;
+
+    small {
+      padding-left: 50px;
+      position: relative;
+      left: -70px;
+
+      &:before {
+      content: '';
+      width: 40px;
+      height: 2px;
+      background-color: $vibrant-red;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translatey(-50%);
+    }
+    }
+
+}
+
+#fp-nav {
+  ul li a {
+    span {
+      background-color: $white;
+    }
+
+    &.active span {
+      background-color: $vibrant-red;
+    }
+  }
+}
