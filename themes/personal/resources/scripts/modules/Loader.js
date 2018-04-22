@@ -1,5 +1,5 @@
 export default function Loader() {
-	const body = document.querySelector(`body`);
+	const body = document.body;
 
 	$(document).ready(function() {
 		body.classList.add('scroll-control');
